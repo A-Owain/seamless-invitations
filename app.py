@@ -124,3 +124,49 @@ if name:
         file_name=f"eid_greeting_{name}.png",
         mime="image/png"
     )
+    invite_text = f"""
+السلام عليكم ورحمة الله وبركاته،
+
+يسعدنا دعوتك لزيارة جناحنا في معرض Seamless، وحياك الله بيننا في بوث الرائدة للتمويل.
+
+يمكنك تسجيل حضورك للمعرض من خلال الرابط التالي:
+https://secure.terrapinn.com/V5/step2.aspx?Q=4957299QJLN&TMID=5540046&l=sa
+
+متشوقين للقائك!
+"""
+
+# مربع الرسالة
+st.markdown(f"""
+<div style="
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+    border-right: 5px solid #254488;
+    font-size: 20px;
+    line-height: 1.8;
+    direction: rtl;
+    text-align: right;
+    margin-top: 25px;
+">
+{invite_text}
+</div>
+""", unsafe_allow_html=True)
+
+# زر النسخ
+import streamlit.components.v1 as components
+
+components.html(f"""
+<button onclick="navigator.clipboard.writeText(`{invite_text}`)"
+style="
+    margin-top: 10px;
+    padding: 10px 18px;
+    background-color: #254488;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+">
+نسخ الرسالة
+</button>
+""", height=60)
