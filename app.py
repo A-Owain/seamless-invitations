@@ -124,7 +124,9 @@ if name:
         file_name=f"eid_greeting_{name}.png",
         mime="image/png"
     )
-    invite_text = f"""
+    
+
+invite_text = f"""
 السلام عليكم ورحمة الله وبركاته،
 
 يسعدنا دعوتك لزيارة جناحنا في معرض Seamless، وحياك الله بيننا في بوث الرائدة للتمويل.
