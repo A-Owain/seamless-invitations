@@ -13,7 +13,7 @@ def load_font_base64(font_path):
 
 
 # Constants
-IMAGE_PATH = "bg.png"
+IMAGE_PATH = "bg2.png"
 FONT_PATH = "effra-cc-arbc-semibold.otf"
 
 st.set_page_config(page_title="دعوة للعملاء", layout="centered")
